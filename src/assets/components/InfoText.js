@@ -13,7 +13,7 @@ const InfoStyles = styled.div`
   }
 `;
 
-export default function HeaderSectionInfo({ children }) {
+export default function InfoText({ children }) {
   return (
     <InfoStyles>
         <p>{children}</p>

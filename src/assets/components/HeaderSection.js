@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderImg from '../images/header-img.png';
 import Button from './Button';
-import HeaderSectionInfo from './HeaderSectionInfo';
+import InfoText from './InfoText';
 import SocialMediaArrow from '../images/social-media-arrow.svg';
 import ScrollDownArrow from '../images/scroll-down-arrow.svg';
 import styled from 'styled-components';
@@ -179,7 +179,7 @@ export default function HeaderSection() {
                     <img src={HeaderImg} alt="de profil"/>
                 </div>
                 <div className='header_info'>
-                    <HeaderSectionInfo>Étudiant en première année du cycle ingénieur (BAC+3) en Informatique et Systèmes d'Information à l’Université de Technologie de Troyes.</HeaderSectionInfo>
+                    <InfoText>Étudiant en première année du cycle ingénieur (BAC+3) en Informatique et Systèmes d'Information à l’Université de Technologie de Troyes.</InfoText>
                     <Button btnLink="/projects" btnLabel="Mes projets" btnBorder={false}></Button>
                 </div>
                 <div className='header_social'>
