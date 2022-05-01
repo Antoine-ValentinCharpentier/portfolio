@@ -64,7 +64,7 @@ const NavBarStyles = styled.div`
             pointer-events:none;
         }
     }
-    @media only screen and (max-width:768px){
+    @media only screen and (max-width:1000px){
         padding:0; 
 
         .burgerOpenNav{
@@ -101,15 +101,25 @@ const NavBarStyles = styled.div`
         
     }
 `;
+
+const CloseCrossStyles = styled(AiOutlineCloseCircle)`
+    fill: var(--blue);
+    color: var(--blue);
+`;
+
+const BurgerOpenNavStyles = styled(GiHamburgerMenu)`
+    fill: var(--blue);
+    color: var(--blue);
+`;
  
 export default function NavBar(){
     const [showNav, SetShowNav] = useState(false);
     return (
     <>
         <NavBarStyles>
-            <div className='burgerOpenNav' onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}><GiHamburgerMenu></GiHamburgerMenu></div>    
+            <div className='burgerOpenNav' onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}><BurgerOpenNavStyles/></div>    
             <ul className={showNav ? 'navItems' : 'navItems close'}>
-                <div className='crossCloseNav' onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}><AiOutlineCloseCircle></AiOutlineCloseCircle></div>
+                <div className='crossCloseNav' onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}><CloseCrossStyles/></div>
                 <li><NavLink to="/" exact onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>Home</NavLink></li>
                 <li><NavLink to="/about" onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>About</NavLink></li>
                 <li><NavLink to="/projects" onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>Projects</NavLink></li>

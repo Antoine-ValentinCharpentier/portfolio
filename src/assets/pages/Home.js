@@ -1,9 +1,10 @@
 import React from 'react'
+import HeaderSection from '../components/HeaderSection'
 
 export default function Home() {
   return (
     <div>
-      <h1>This is Home page</h1>
+      <HeaderSection/>
     </div>
   )
 }
