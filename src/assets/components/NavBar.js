@@ -7,7 +7,7 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 const NavBarStyles = styled.div`
     position: fixed;
     z-index: 100;
-    top:0:
+    top:0;
     left:0;
     width: 100%;
     padding 1rem 0;
@@ -121,7 +121,6 @@ export default function NavBar(){
             <ul className={showNav ? 'navItems' : 'navItems close'}>
                 <div className='crossCloseNav' onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}><CloseCrossStyles/></div>
                 <li><NavLink to="/" exact onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>Home</NavLink></li>
-                <li><NavLink to="/about" onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>About</NavLink></li>
                 <li><NavLink to="/projects" onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>Projects</NavLink></li>
                 <li><NavLink to="/contact" onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>Contact</NavLink></li>
             </ul>

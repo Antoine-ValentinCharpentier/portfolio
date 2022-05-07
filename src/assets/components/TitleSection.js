@@ -6,8 +6,8 @@ const TitleStyles = styled.div`
     width:60%;
     margin:0 auto;
     text-align:center;
-    margin-top:6rem;
-    margin-bottom:6rem;
+    margin-top:7rem;
+    margin-bottom:4rem;
     border-radius : 10px;
     padding-top:1rem;
     padding-bottom:1rem;
