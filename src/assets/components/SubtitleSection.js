@@ -3,16 +3,24 @@ import styled from 'styled-components';
 
 const SubtitleStyles = styled.div`
     width:60%;
-    margin:0 auto;
-    text-align:center;
-    margin-top:2rem;
-    margin-bottom:2rem;
-    p{
-        font-size:2em;
-        color: var(--white);
-    }
+    margin: 2rem auto;
+    text-align:center; 
 
-    @media only screen and (max-width: 1000px) {
+    p {
+        font-size:2em;
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 3px solid var(--white); 
+        line-height: 0.1em;
+        color: var(--white);
+
+        span { 
+            background-color: var(--dark-bg);
+             padding:2rem;
+         }
+     } 
+
+     @media only screen and (max-width: 1000px) {
         width:70%;
         p{
             font-size:1.5em;
@@ -23,7 +31,7 @@ const SubtitleStyles = styled.div`
 export default function TitleSection({subtitle}) {
   return (
     <SubtitleStyles>
-        <p>{subtitle}</p>
+        <p><span>{subtitle}</span></p>
     </SubtitleStyles>
   )
 }
