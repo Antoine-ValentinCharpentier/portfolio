@@ -6,7 +6,7 @@ const SmallButtonStyles = styled.div`
     margin: 0.5rem;
     
     .button {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         background-color: ${(props) => props.btnBorder ? 'transperant' : 'var(--gray-1)'};
         padding: 0.5em 1.5em;
         border: 2px solid var(--gray-1);
@@ -28,10 +28,12 @@ const SmallButtonStyles = styled.div`
     }
 `;
 
-export default function Button({ btnLink = "Test", btnLabel="Test", btnBorder = false, outside=false}) {
+export default function Button({ btnLink = "Test", btnLabel="Test", btnBorder = false, outside=false, form=false}) {
   return (
     <SmallButtonStyles btnBorder={btnBorder}>
-        { outside ? <a className='button' href={btnLink} target="_blank" rel="noreferrer">{ btnLabel}</a>: <Link className='button' to={btnLink}>{ btnLabel}</Link>}
+        {outside && <a className='button' href={btnLink} target="_blank" rel="noreferrer">{ btnLabel}</a>}
+        { (outside === false && form === false) &&  <Link className='button' to={btnLink}>{ btnLabel}</Link>}
+        { (outside === false && form === true) &&  <button className='button'>{ btnLabel}</button>}
     </SmallButtonStyles>
   )
 }

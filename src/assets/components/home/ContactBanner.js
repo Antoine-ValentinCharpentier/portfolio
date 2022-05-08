@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from './Button';
-import InfoText from './InfoText';
+import Button from '../Button';
+import InfoText from '../InfoText';
 import styled from 'styled-components';
 
 const ContactBannerStyles = styled.div`

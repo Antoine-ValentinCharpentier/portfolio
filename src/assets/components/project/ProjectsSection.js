@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import SubtitleSection from './SubtitleSection'
+import SubtitleSection from '../SubtitleSection'
 import styled from 'styled-components';
 
 const CardsStyles = styled.div`
@@ -24,7 +24,7 @@ export default function ProjectsSection({subtitle, listProjects}) {
             <SubtitleSection subtitle={subtitle}/>
             <CardsStyles>
               {listProjects.map((project,index)=>{
-                  return <ProjectCard index={index} project={project}/>
+                  return <ProjectCard key={index} index={index} project={project}/>
               })}
             </CardsStyles>
         </>

@@ -12,7 +12,7 @@ const TitleStyles = styled.div`
     padding-top:1rem;
     padding-bottom:1rem;
     p{
-        font-size:4em;
+        font-size:3em;
         color: var(--gray-2);
     }
 

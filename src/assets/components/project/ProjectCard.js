@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import SmallButton from './SmallButton'
+import SmallButton from '../SmallButton'
 
 
 const CardStyles = styled.div`
@@ -53,7 +53,7 @@ const CardStyles = styled.div`
             margin-top:1rem;
             p{
                 color:var(--gray-1);
-                font-size:1.2em;
+                font-size:1.5em;
                 display:inline-block;
             }
         }
@@ -61,7 +61,7 @@ const CardStyles = styled.div`
         .techno:before{
             content:"Technologies : ";
             color:var(--gray-1);
-            font-size:1.2em;
+            font-size:1.5em;
         }
 
         .button{

@@ -1,9 +1,12 @@
 import React from 'react'
+import Footer from '../components/Footer'
+import FormContactSection from '../components/contact/FormContactSection'
 
 export default function Contact() {
   return (
     <div>
-      <h1>This is Contact page.</h1>
+      <FormContactSection/>
+      <Footer/>
     </div>
   )
 }

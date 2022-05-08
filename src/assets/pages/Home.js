@@ -1,8 +1,8 @@
 import React from 'react'
-import ContactBanner from '../components/ContactBanner'
+import ContactBanner from '../components/home/ContactBanner'
 import Footer from '../components/Footer'
-import HeaderSection from '../components/HeaderSection'
-import TimeLine from '../components/Timeline'
+import HeaderSection from '../components/home/HeaderSection'
+import TimeLine from '../components/home/Timeline'
 import educations from '../data/EducationData'
 import works from '../data/WorkData'
 

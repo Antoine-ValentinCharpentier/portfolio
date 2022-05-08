@@ -1,9 +1,9 @@
 import React from 'react'
-import HeaderImg from '../images/header-img.png';
-import Button from './Button';
-import InfoText from './InfoText';
-import SocialMediaArrow from '../images/social-media-arrow.svg';
-import ScrollDownArrow from '../images/scroll-down-arrow.svg';
+import HeaderImg from '../../images/header-img.png';
+import Button from '../Button';
+import InfoText from '../InfoText';
+import SocialMediaArrow from '../../images/social-media-arrow.svg';
+import ScrollDownArrow from '../../images/scroll-down-arrow.svg';
 import styled from 'styled-components';
 import { AiOutlineLinkedin as Linkedin } from 'react-icons/ai';
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import TitleSection from './TitleSection';
+import TitleSection from '../TitleSection';
 
 const TimeLineStyles = styled.div`
     .container {
@@ -129,8 +129,8 @@ export default function TimeLine({datas, title}) {
                     {datas.map((data) => {
                         return (
                             <li>
-                                <div class="timeline-content">
-                                    <h3 class="date">{data.date} | {data.city}</h3>
+                                <div className="timeline-content">
+                                    <h3 className="date">{data.date} | {data.city}</h3>
                                     <h1>{data.company}</h1>
                                     <p>{data.desc}</p>
                                 </div>
