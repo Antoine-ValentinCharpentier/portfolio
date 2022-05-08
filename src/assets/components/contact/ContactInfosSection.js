@@ -11,9 +11,6 @@ const ContactInfosSectionStyles = styled.div`
     display:flex;
     flex-direction:row;
     margin:3rem auto;
-    *{
-        margin:0 auto;
-    }
 
     @media only screen and (max-width:1000px){
         flex-direction:column;
@@ -27,7 +24,7 @@ export default function ContactInfosSection() {
   return (
     <>
         <SubtitleSection subtitle="Me contacter autrement"/>
-            <ContactInfosSectionStyles>
+        <ContactInfosSectionStyles>
             <ContactItem icon={<AiTwotonePhone/>} desc={<p>{personalInfos.phone}</p>}/>
             <ContactItem icon={<AiOutlineMail/>} desc={<p>{personalInfos.email}</p>}/>
             <ContactItem icon={<MdOutlinePlace/>} desc={<p>{personalInfos.place}</p>}/>

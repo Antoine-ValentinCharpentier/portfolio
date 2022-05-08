@@ -9,9 +9,6 @@ const LanguagesSectionStyles = styled.div`
     display:flex;
     flex-direction:row;
     margin:3rem auto;
-    *{
-        margin:0 auto;
-    }
 
     @media only screen and (max-width:1000px){
         flex-direction:column;

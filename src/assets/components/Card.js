@@ -3,12 +3,12 @@ import { AiOutlineHome } from 'react-icons/ai';
 import styled from 'styled-components';
 
 const ItemStyles = styled.div`
-    width:100%;
+    width: 100%;
     background-color:var(--deep-dark);
     border-radius: 1rem;
     margin:1rem;
     div{
-
+        margin:0 auto;
         &.logo{
             padding-top:2rem;
             width:20%;
