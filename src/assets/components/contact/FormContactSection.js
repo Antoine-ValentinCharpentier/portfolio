@@ -2,9 +2,9 @@ import React, { useRef } from 'react'
 import TitleSection from '../TitleSection'
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
-import personalInfos from '../../data/PersonalInfo'
-import SubtitleSection from '../SubtitleSection'
-import SmallButton from '../SmallButton'
+import personalInfos from '../../data/PersonalInfoData';
+import SubtitleSection from '../SubtitleSection';
+import SmallButton from '../SmallButton';
 import { useForm } from 'react-hook-form';
 
 const FormStyles = styled.div`

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const SubtitleStyles = styled.div`
     width:60%;
-    margin: 3rem auto;
+    margin: 4rem auto;
     text-align:center; 
 
     p {

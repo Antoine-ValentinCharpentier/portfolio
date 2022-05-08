@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import personalInfos from '../data/PersonalInfoData';
 import { AiTwotonePhone, AiOutlineMail } from 'react-icons/ai';
 import { MdOutlinePlace } from 'react-icons/md';
 
@@ -100,9 +100,9 @@ export default function Footer() {
             <h2 className="footer_right_column_title">Informations de </h2>
             <ContentStyles>
                 <ul>
-                    <li><PhoneStyles></PhoneStyles> 07 81 28 40 39</li>
-                    <li><a href="mailto:antoine_valentin.charpentier@utt.fr" target="_blank" rel="noreferrer"><EmailStyles/> antoine_valentin.charpentier@utt.fr</a></li>
-                    <li><PlaceStyles/> 6 allée Guy Deniélou, 10430, Rosières-prés-Troyes</li>
+                    <li><PhoneStyles/> {personalInfos.phone}</li>
+                    <li><a href={"mailto:"+personalInfos.email} target="_blank" rel="noreferrer"><EmailStyles/> {personalInfos.email}</a></li>
+                    <li><PlaceStyles/> {personalInfos.place}</li>
                 </ul>
             </ContentStyles>
         </div>
