@@ -3,6 +3,7 @@ import ContactBanner from '../components/home/ContactBanner'
 import Footer from '../components/Footer'
 import HeaderSection from '../components/home/HeaderSection'
 import TimeLine from '../components/home/Timeline'
+import LanguagesSection from '../components/home/LanguagesSection'
 import educations from '../data/EducationData'
 import works from '../data/WorkData'
 
@@ -11,7 +12,8 @@ export default function Home() {
     <div>
       <HeaderSection/>
       <TimeLine datas={educations} title="Mon parcours académique"/>
-      <TimeLine datas={works} title="Mon expérience professionnelle"/>
+      <TimeLine datas={works} title="Mon expérience professionnelle"/>*
+      <LanguagesSection/>
       <ContactBanner/>
       <Footer/>
     </div>

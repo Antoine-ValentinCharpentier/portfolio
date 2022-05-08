@@ -21,20 +21,19 @@ const ItemStyles = styled.div`
     }
 
     @media only screen and (max-width:1000px){
-        
-            width:60%;
+        width:60%;
         margin:1rem auto;
     }
 `;
 
-export default function ContactItem({icon = <AiOutlineHome/>, label = "Test"}) {
+export default function ContactItem({icon = <AiOutlineHome/>, desc = <></>}) {
   return (
     <ItemStyles>
         <div className='logo'>
             {icon}
         </div>
         <div className='body'>
-            <p>{label}</p>
+            {desc}
         </div>
     </ItemStyles>
   )

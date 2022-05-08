@@ -1,6 +1,6 @@
 import React from 'react'
 import SubtitleSection from '../SubtitleSection'
-import ContactItem from './ContactItem'
+import ContactItem from '../Card'
 import { AiTwotonePhone, AiOutlineMail } from 'react-icons/ai';
 import { MdOutlinePlace } from 'react-icons/md';
 import personalInfos from '../../data/PersonalInfoData'
@@ -28,9 +28,9 @@ export default function ContactInfosSection() {
     <>
         <SubtitleSection subtitle="Me contacter autrement"/>
             <ContactInfosSectionStyles>
-            <ContactItem icon={<AiTwotonePhone/>} label={personalInfos.phone}/>
-            <ContactItem icon={<AiOutlineMail/>} label={personalInfos.email}/>
-            <ContactItem icon={<MdOutlinePlace/>} label={personalInfos.place}/>
+            <ContactItem icon={<AiTwotonePhone/>} desc={<p>{personalInfos.phone}</p>}/>
+            <ContactItem icon={<AiOutlineMail/>} desc={<p>{personalInfos.email}</p>}/>
+            <ContactItem icon={<MdOutlinePlace/>} desc={<p>{personalInfos.place}</p>}/>
         </ContactInfosSectionStyles>
     </>
     

@@ -5,7 +5,7 @@ import TitleSection from '../TitleSection';
 const TimeLineStyles = styled.div`
     .container {
         margin-top:10rem;
-        margin-bottom:10rem;
+        
         display: flex;
 
         .timeline {
