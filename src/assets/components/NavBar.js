@@ -54,8 +54,8 @@ const NavBarStyles = styled.div`
     }
     .burgerOpenNav{
         position:absolute;
-        right: 2rem;
-        top: 1rem;
+        right: 3rem;
+        top: 3rem;
         width:3rem;
         cursor:pointer;
         display:none;

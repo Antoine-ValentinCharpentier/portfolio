@@ -1,206 +1,184 @@
 import React from 'react'
-import HeaderImg from '../../images/header-img.png';
-import Button from '../Button';
-import InfoText from '../InfoText';
 import SocialMediaArrow from '../../images/social-media-arrow.svg';
-import ScrollDownArrow from '../../images/scroll-down-arrow.svg';
 import styled from 'styled-components';
 import { AiOutlineLinkedin as Linkedin } from 'react-icons/ai';
-
-
-
+import personalInfos from '../../data/PersonalInfoData';
+import SmallButton from '../SmallButton'
+import CV from '../../docs/cv.pdf'
 
 const HeaderStyles = styled.div`
     .header {
-        height: 100vh;
-        min-height: 1000px;
-        width: 100%;
+        min-height: 100vh;
+        width: 90%;
+        margin:0 auto;
         text-align: center;
         display: flex;
+        flex-direction:row;
         align-items: center;
         justify-content: center;
-        position: relative;
-    }
-    .header_heading {
-        font-size: 2rem;
-        margin-bottom: -3rem;
-        position: relative;
-        
-        span {
-            display: inline-block;
-            width: 100%;
+
+        .header_right {
+            width: 50%;
+            border-left: 4px solid var(--white);
+
+            img{
+                border: 4px solid var(--blue);
+                border-radius:2rem;
+                max-width:50%;
+            }
         }
-    }
-    .header_name {
-        font-family: 'Montserrat SemiBold';
-        font-size: 5rem;
-        color: var(--white);
-    }
-    .header_name:before{
-        content: 'Antoine-Valentin ';
-    }
-    .header_name:after{
-        content: 'Charpentier';
-        color:var(--blue);
-    }
-    .header_img {
-        max-width: 900px;
-        width: 100%;
-        height: 600px;
-        margin: 0 auto;
-        border: 2px solid var(--gray-1);
-    }
-    .header_info {
-        margin-top: -18rem;
-    }
-    .header_social,
-    .header_scrollDown {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        position: absolute;
-        bottom: 20px;
-        width: 50px;
-    }
-    .header_social {
-        left: 50px;
-    }
-    .header_scrollDown {
-        right: 50px;
-    }
-    .header_social_indicator,
-    .header_scrollDown {
-        width: 50px;
-        p {
-            font-size: 1.6rem;
-            transform: translateY(-70px) rotate(90deg);
-            letter-spacing: 0.7rem;
-            text-transform: uppercase;
-            color:var(--blue);
-        }
-        img {
-            max-height: 45px;
-            width: 16px;
-            margin: 0 auto;
-            object-fit: contain;
-        }
-    }
-    .header_scrollDown {
-        img {
-            max-height: 70px;
-        }
-    }
-   
-    .header_social_icon {
-        ul {
-            li {
-                margin-bottom: 1rem;
-                a {
-                    color:var(--blue);
-                    width:3rem;
+
+        .header_left {
+            width: 50%;
+
+            .header_heading {
+                font-size: 2rem;
+                
+                span {
                     display: inline-block;
-                    transform: rotate(-90deg);
-                    margin-bottom: 2rem;
+                    width: 80%;
+    
+                    &.header_name {
+                        font-family: 'Montserrat SemiBold';
+                        font-size: 4rem;
+                        color: var(--white);
+                    }
+                    &.header_name:before{
+                        content: 'Antoine-Valentin ';
+                    }
+                    &.header_name:after{
+                        content: 'Charpentier';
+                        color:var(--blue);
+                    }
                 }
             }
+
+            .header_desc{
+                width:80%;
+                margin:0 auto;
+
+                p{
+                    margin-top:3rem;
+                    font-size:2rem;
+                    color:var(--white);
+                    white-space: pre-line;
+                    text-align: justify;
+                    line-height: 2;
+
+                    span.blue{
+                        color:var(--blue);
+                    }
+                }
+            }
+
+            .header_buttons{
+                margin:3rem auto;
+                width:80%;
+                display:flex;
+            }
+        }
+
+    }
+   
+    @media only screen and (max-width: 1700px) {
+        .header .header_right img{
+            max-width:60%;
+        }
+
+    }
+
+    @media only screen and (max-width: 1400px) {
+        .header .header_right img{
+            max-width:70%;
         }
     }
     
     @media only screen and (max-width: 1000px) {
-        .header {
-            min-height: 750px;
-        }
-        .header_heading {
-            font-size: 1.4rem;
-            margin-bottom: 5rem;
-            
-            .header_name {
-                font-size: 4.5rem;
+        .header{
+            flex-direction:column-reverse;
+
+            .header_right{
+                display:none;
             }
-        }
-        .header_img {
-            height: 300px;
-        }
-        .header_info {
-            margin-top: 5rem;
-        }
-        .header_social {
-            width: 10px;
-            
-            .header_social_indicator {
-                width: 20px;
-                p {
-                    font-size: 1.2rem;
-                }
-                img {
-                    max-height: 22px;
+
+            .header_left{
+                width:90%;
+
+                .header_desc{    
+                    p{
+                        font-size:1.8rem;
+                    }
                 }
             }
-            
-            .header_social_icon {
-                ul {
-                    li {
-                        a {
-                            width:2rem;
-                            margin-bottom: 1rem;
-                        }
+
+            &::after{
+                position:absolute;
+                content:'';
+                width:200px;
+                height:200px;
+                right:50px;
+                bottom:50px;
+                border-right: 1rem solid var(--gray-2);
+                border-bottom: 1rem solid var(--gray-2);
+            }
+            &::before{
+                position:absolute;
+                content:'';
+                width:200px;
+                height:200px;
+                left:50px;
+                top:50px;
+                border-top: 1rem solid var(--gray-2);
+                border-left: 1rem solid var(--gray-2);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .header{
+            .header_left{
+                .header_desc{    
+                    p{
+                        font-size:1.5rem;
                     }
                 }
             }
         }
-        .header_scrollDown {
-            right: 10;
-            width: 20px;
-            gap: 1rem;
-            
-            p {
-                font-size: 1.3rem;
-            }
+    }
+
+    @media only screen and (max-width: 400px) {
+        .header::before{
+            display:none;
+        }
+        .header::after{
+            display:none;
         }
     }
 `;
 
-const LinkedinStyles = styled(Linkedin)`
-    fill: var(--blue);
-    color: var(--blue);
-    transform: rotate(-270deg);
-`;
 
-export default function HeaderSection() {
+export default function HeaderSection2() {
   return (
     <HeaderStyles>
         <div className='header'>
-            <div className='container'>
+            <div className='header_left'>
                 <h1 className='header_heading'>
                     <span>Bonjour, je suis</span>
                     <span className='header_name'></span>
                 </h1>
-                <div className='header_img'>
-                    <img src={HeaderImg} alt="de profil"/>
+                <div className='header_desc'>
+                    <p>Étudiant en première année du cycle ingénieur (BAC+3) en <span className='blue'>Informatique</span> et Systèmes d'Information à <span className='blue'>l’Université de Technologie de Troyes</span>. Je souhaiterais par la suite me spécialiser dans le domaine de <span className='blue'>l'innovation par le logiciel.</span></p>
                 </div>
-                <div className='header_info'>
-                    <InfoText>Étudiant en première année du cycle ingénieur (BAC+3) en Informatique et Systèmes d'Information à l’Université de Technologie de Troyes.</InfoText>
-                    <Button btnLink="/projects" btnLabel="Mes projets" btnBorder={false}></Button>
-                </div>
-                <div className='header_social'>
-                    <div className='header_social_indicator'>
-                        <p>Suivez-moi</p>
-                        <img src={SocialMediaArrow} alt="flèche réseaux sociaux"/>
-                    </div>
-                    <div className='header_social_icon' >
-                        <ul>
-                            <li>
-                                <a href="https://www.linkedin.com/in/antoine-valentin-charpentier/" target="_blank" rel="noreferrer"><LinkedinStyles/></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className='header_scrollDown'>
-                    <p>Défiler</p>
-                    <img src={ScrollDownArrow} alt="flèche défilement vers le bas"/>
+                <div className='header_buttons'>
+                    <SmallButton big={true} btnLink={CV} btnLabel="Mon CV" outside={true}/>
+                    <SmallButton big={true} btnLink="projects" btnLabel="Mes projets" btnBorder ={true}/>
                 </div>
             </div>
+            <div className='header_right'>
+                <img src={personalInfos.profilePicture} alt="de profil"/>
+            </div>
         </div>
+
     </HeaderStyles>
   )
 }

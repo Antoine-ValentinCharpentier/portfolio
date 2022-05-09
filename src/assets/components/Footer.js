@@ -63,6 +63,11 @@ const ContentStyles = styled.div`
     
     @media only screen and (max-width: 1000px){
         font-size: 1.4 rem;
+
+        ul li{
+            word-wrap: break-word;       
+            overflow-wrap: break-word;
+        }
     }
 
 `;

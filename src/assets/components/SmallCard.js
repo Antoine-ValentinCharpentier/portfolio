@@ -28,6 +28,7 @@ const ItemStyles = styled.span`
         transition:0.5s ease;
         color:var(--blue);
     }
+
 `;
 export default function SmallCard({icon="", desc="test"}) {
   return (

@@ -1,14 +1,13 @@
-import React from 'react';
-import { AiOutlineHome } from 'react-icons/ai';
+import React from 'react'
 import styled from 'styled-components';
 
 const ItemStyles = styled.div`
-    width: 100%;
+    width:100%;
     background-color:var(--deep-dark);
     border-radius: 1rem;
     margin:1rem;
     div{
-        margin:0 auto;
+
         &.logo{
             padding-top:2rem;
             width:20%;
@@ -24,19 +23,18 @@ const ItemStyles = styled.div`
         width:60%;
         margin:1rem auto;
     }
-    @media only screen and (max-width: 500px){
-        width:90%;
-    }
 `;
 
-export default function ContactItem({icon = <AiOutlineHome/>, desc = <></>}) {
-  return (
+export default function LanguageItem({language}) {
+    const {img, label} = language;
+  
+    return (
     <ItemStyles>
         <div className='logo'>
-            {icon}
+            <img src={img} alt='' />
         </div>
         <div className='body'>
-            {desc}
+            <p>{label}</p>
         </div>
     </ItemStyles>
   )

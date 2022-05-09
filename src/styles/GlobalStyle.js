@@ -28,6 +28,10 @@ const GlobalStyles = createGlobalStyle`
   a{
     text-decoration: none;
   }
+  p,a{
+    word-wrap: break-word;       
+    overflow-wrap: break-word;
+  }
   img, svg{
     width: 100%;
     height: 100%;

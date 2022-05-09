@@ -22,6 +22,13 @@ const TitleStyles = styled.div`
             font-size:3em;
         }
     }
+
+    @media only screen and (max-width: 400px) {
+      p{
+        font-size:2em;
+      }
+    }
+  }
 `;
 
 export default function TitleSection({title}) {
