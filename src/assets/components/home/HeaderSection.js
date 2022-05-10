@@ -1,7 +1,5 @@
 import React from 'react'
-import SocialMediaArrow from '../../images/social-media-arrow.svg';
 import styled from 'styled-components';
-import { AiOutlineLinkedin as Linkedin } from 'react-icons/ai';
 import personalInfos from '../../data/PersonalInfoData';
 import SmallButton from '../SmallButton'
 import CV from '../../docs/cv.pdf'
@@ -137,6 +135,12 @@ const HeaderStyles = styled.div`
     @media only screen and (max-width: 500px) {
         .header{
             .header_left{
+                .header_heading{
+                    font-size:1.5rem;
+                    .header_name::before, .header_name::after{
+                        font-size:2.5rem;
+                    }
+                }
                 .header_desc{    
                     p{
                         font-size:1.5rem;

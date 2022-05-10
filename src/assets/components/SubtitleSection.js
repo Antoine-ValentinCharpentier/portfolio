@@ -22,9 +22,6 @@ const SubtitleStyles = styled.div`
 
      @media only screen and (max-width: 1000px) {
         width:70%;
-        p{
-            font-size:1.5em;
-        }
     }
 `;
 

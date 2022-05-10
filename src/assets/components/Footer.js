@@ -46,6 +46,13 @@ const FooterStyle = styled.div`
             & > div {
                 margin-top: 5rem;
             }
+
+            .footer_left_column ,.footer_right_column {
+                width:90%;
+                .footer_left_column_title, .footer_right_column_title {
+                    font-size: 2.5rem;
+                }
+            }
         }
     }
 `;
@@ -53,16 +60,15 @@ const FooterStyle = styled.div`
 const ContentStyles = styled.div`
     border-left: 3px solid var(--blue);
     padding-left: 2rem;
-
+    margin:0 auto;
     max-width: 500px;
-    margin: 0 auto;
     font-size: 1.8rem;
     line-height: 1.5em;
     text-align: justify;
     text-justify: auto;
     
-    @media only screen and (max-width: 1000px){
-        font-size: 1.4 rem;
+    @media only screen and (max-width: 500px){
+        font-size: 1.5rem;
 
         ul li{
             word-wrap: break-word;       

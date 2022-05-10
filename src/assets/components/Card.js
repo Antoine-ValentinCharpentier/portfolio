@@ -7,6 +7,7 @@ const ItemStyles = styled.div`
     background-color:var(--deep-dark);
     border-radius: 1rem;
     margin:1rem;
+    border:3px solid var(--dark-bg);
     div{
         margin:0 auto;
         &.logo{
@@ -20,12 +21,31 @@ const ItemStyles = styled.div`
         }
     }
 
+    &:hover{
+        background:var(--dark-bg);
+        border:3px solid var(--blue);
+        
+        div.body{
+            p,span,a,li{
+                color:var(--blue);
+            }
+        }
+        div.logo{
+            svg{
+                fill:var(--blue);
+                color:var(--blue);
+            }
+            
+        }
+        
+    }
+
     @media only screen and (max-width:1000px){
-        width:60%;
+        width:70%;
         margin:1rem auto;
     }
     @media only screen and (max-width: 500px){
-        width:90%;
+        width:100%;
     }
 `;
 

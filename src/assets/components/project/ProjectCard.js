@@ -76,7 +76,7 @@ const CardStyles = styled.div`
         .img{
             img{
                 transition: 0.5s ease;
-                transform:scale(1.3);
+                transform:scale(1.2);
                 filter: grayscale(0);
             }
         }

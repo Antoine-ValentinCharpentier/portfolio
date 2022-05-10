@@ -52,7 +52,14 @@ const TimeLineStyles = styled.div`
         }
     }
 
+    @media only screen and (max-width: 1000px){
+        .container{
+            margin-top:0rem;
+        }
+    }
+
     @media only screen and (min-width: 1000px) {
+        
         .timeline:before {
             content: "";
             position: absolute;

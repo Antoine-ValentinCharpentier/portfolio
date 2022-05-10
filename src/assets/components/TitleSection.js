@@ -24,7 +24,9 @@ const TitleStyles = styled.div`
     }
 
     @media only screen and (max-width: 400px) {
+      margin-top:3rem;
       p{
+
         font-size:2em;
       }
     }

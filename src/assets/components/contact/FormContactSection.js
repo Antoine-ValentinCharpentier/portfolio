@@ -65,6 +65,7 @@ const FormStyles = styled.div`
     }
 
     @media only screen and (max-width: 1000px){
+        width:70%;
         form{
             .form_row{
                 display:flex;
