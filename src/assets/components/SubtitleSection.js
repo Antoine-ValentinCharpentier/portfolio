@@ -23,6 +23,17 @@ const SubtitleStyles = styled.div`
      @media only screen and (max-width: 1000px) {
         width:70%;
     }
+
+    @media only screen and (max-width: 500px) {
+        p{
+            font-size:1.5em;
+        }
+        width:70%;
+    }
+
+    @media only screen and (max-width: 400px) {
+        width:100%;
+    }
 `;
 
 export default function TitleSection({subtitle}) {

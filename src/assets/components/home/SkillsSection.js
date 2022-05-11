@@ -12,7 +12,17 @@ const SkillsStyles = styled.div`
     margin:0 auto;
 
     @media only screen and (max-width:1000px){
+        width:80%;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (max-width:500px){
+        width:90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width:300px){
+        width:90%;
+        grid-template-columns: repeat(1, 1fr);
     }
 `;
 

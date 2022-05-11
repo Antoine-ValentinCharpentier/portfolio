@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
   a{
     text-decoration: none;
   }
-  p,a{
+  p,a,h1,h2,h3,h4{
     word-wrap: break-word;       
     overflow-wrap: break-word;
   }
