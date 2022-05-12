@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
@@ -114,6 +114,12 @@ const BurgerOpenNavStyles = styled(GiHamburgerMenu)`
  
 export default function NavBar(){
     const [showNav, SetShowNav] = useState(false);
+
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
     return (
     <>
         <NavBarStyles>

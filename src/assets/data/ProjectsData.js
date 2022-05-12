@@ -122,7 +122,7 @@ const projectsData = [
                 title: "Jeu d'échec",
                 desc: "Réalisation d'un jeu d'échec en Java & JavaFX. Deux joueurs peuvent s'affronter autour d'une partie d'échec. Tour à tour, ils s'échangent la main. Le programme indique la position des pions sélectionnés et où ils peuvent être déplacés. Il s'agit d'un projet personnel.",
                 techno: [
-                    "Python","JavaFX",
+                    "Java","JavaFX",
                 ],
                 image: EchecImg,
                 git:"",
