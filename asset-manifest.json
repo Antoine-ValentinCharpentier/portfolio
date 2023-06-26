@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.d26a9e27.js",
+    "static/media/tintin.png": "/portfolio/static/media/tintin.46b26f1458d64139f48f.png",
+    "static/media/de.jpg": "/portfolio/static/media/de.28be5602ea8506f3a52e.jpg",
+    "static/media/update.png": "/portfolio/static/media/update.92e8986659713a1dcb2f.png",
+    "static/media/hypixel.png": "/portfolio/static/media/hypixel.14cdb3e1854089b26965.png",
+    "static/media/WitchHunt.png": "/portfolio/static/media/WitchHunt.f8c091b37a66d13857c2.png",
+    "static/media/profile-picture.jpg": "/portfolio/static/media/profile-picture.db3d428f2d8a96190dcb.jpg",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.9cef74940895ec43f24e.png",
+    "static/media/pokemon.png": "/portfolio/static/media/pokemon.3c8e9bd92c947774f749.png",
+    "static/media/minecraft.jpg": "/portfolio/static/media/minecraft.491600703959577fe674.jpg",
+    "static/media/clash.png": "/portfolio/static/media/clash.8dbb85c05675ee0e822b.png",
+    "static/media/Montserrat-Bold.ttf": "/portfolio/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
+    "static/media/Montserrat-SemiBold.ttf": "/portfolio/static/media/Montserrat-SemiBold.fa8441f345d83a0bc4ec.ttf",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.a3d52e85b9b7a5a168a8.pdf",
+    "static/media/stegano.jpg": "/portfolio/static/media/stegano.5b29f17bedaf14c70604.jpg",
+    "static/media/courses.png": "/portfolio/static/media/courses.028141f9f73fff108913.png",
+    "static/media/taquin2.png": "/portfolio/static/media/taquin2.4b8a3d190df0cef17b6f.png",
+    "static/media/RobotoMono-Regular.ttf": "/portfolio/static/media/RobotoMono-Regular.418a8f9f65ccad0918af.ttf",
+    "static/media/echec.png": "/portfolio/static/media/echec.aa932b37c28d710e5e0e.png",
+    "static/media/arduino.png": "/portfolio/static/media/arduino.5bb731cb85bea14f43d0.png",
+    "static/media/dashboard.png": "/portfolio/static/media/dashboard.f931619807c4d12a0e19.png",
+    "static/media/css.png": "/portfolio/static/media/css.4f0dbd306f650eb73187.png",
+    "static/media/bash.png": "/portfolio/static/media/bash.14d710cf9adf8e7557a7.png",
+    "static/media/figma.png": "/portfolio/static/media/figma.bb6221e003b7cdacff31.png",
+    "static/media/vaccins.png": "/portfolio/static/media/vaccins.17445ff7d13a1f4305f0.png",
+    "static/media/python.png": "/portfolio/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/scraping.webp": "/portfolio/static/media/scraping.e1adf23f75b1c39bd153.webp",
+    "static/media/united-kingdom.png": "/portfolio/static/media/united-kingdom.12337ad1495a37ccfbb9.png",
+    "static/media/react-logo.png": "/portfolio/static/media/react-logo.ff520d3600bb64a832f6.png",
+    "static/media/php.png": "/portfolio/static/media/php.502964ac585cdadcaeb0.png",
+    "static/media/C.png": "/portfolio/static/media/C.0ec86a4df25cbb49676f.png",
+    "static/media/sql-server.png": "/portfolio/static/media/sql-server.83081fa6a4782c3db600.png",
+    "static/media/vba.webp": "/portfolio/static/media/vba.d00fc57f3ec9b2f897a7.webp",
+    "static/media/uml.webp": "/portfolio/static/media/uml.7f1ca1357d160049e3fe.webp",
+    "index.html": "/portfolio/index.html",
+    "main.d26a9e27.js.map": "/portfolio/static/js/main.d26a9e27.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d26a9e27.js"
+  ]
+}
