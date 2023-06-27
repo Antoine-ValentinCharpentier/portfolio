@@ -12,7 +12,7 @@ const FormStyles = styled.div`
     margin: 0 auto;
     form{
         padding:2rem;
-        background-color:var(--gray-2);
+        background-color:var(--second-bg);
         border-radius:1rem;
         margin-bottom:4rem;
         .form_row{
@@ -20,7 +20,7 @@ const FormStyles = styled.div`
             display:flex;
             flex-direction:row;
             label{
-                color:var(--blue);
+                color:var(--text);
                 padding:0.5rem;
                 font-size: 2rem;
                 line-height: 1.5em;
@@ -31,23 +31,27 @@ const FormStyles = styled.div`
                 input,textarea{
                     font-size: 1.5rem;
                     border: 2px solid blue;
-                    background-color:var(--deep-dark);
-                    color:var(--gray-1);
+                    background-color:var(--first-bg);
+                    color:var(--text);
                     border:none;
                     border-radius:0.5rem;
                     padding:0.8rem;
                     outline:none;
-                    border:1px solid var(--deep-dark);
+                    border:1px solid var(--details);
                 }
 
                 input:focus,textarea:focus{
-                    border:1px solid var(--white);
-                    color:var(--white);
+                    border:1px solid var(--blue);
+                    color:var(--blue);
                 }
 
                 &:hover{
-                    color:var(--white);
+                    color:var(--blue);
                     transition: 0.3s ease;
+                    input, textarea {
+                        border:1px solid var(--blue);
+                        color:var(--blue);
+                    }
                 }
             }
 
@@ -58,7 +62,7 @@ const FormStyles = styled.div`
                 padding:0.7rem;
                 margin-top:1rem;
                 p{
-                    color: var(--black);
+                    color: var(--text);
                 }
             }
         }

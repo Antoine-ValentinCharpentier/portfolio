@@ -4,10 +4,10 @@ import styled from 'styled-components';
 
 const ItemStyles = styled.div`
     width: 100%;
-    background-color:var(--deep-dark);
+    background-color:var(--second-bg);
     border-radius: 1rem;
     margin:1rem;
-    border:3px solid var(--dark-bg);
+    border:3px solid var(--second-bg);
     div{
         margin:0 auto;
         &.logo{
@@ -22,7 +22,7 @@ const ItemStyles = styled.div`
     }
 
     &:hover{
-        background:var(--dark-bg);
+        background:var(--second-bg);
         border:3px solid var(--blue);
         
         div.body{

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ItemStyles = styled.div`
     width:100%;
-    background-color:var(--deep-dark);
+    background-color:var(--second-bg);
     border-radius: 1rem;
     margin:1rem;
     div{

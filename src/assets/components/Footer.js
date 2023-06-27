@@ -5,7 +5,7 @@ import { AiTwotonePhone, AiOutlineMail } from 'react-icons/ai';
 import { MdOutlinePlace } from 'react-icons/md';
 
 const FooterStyle = styled.div`
-    background-color: var(--deep-dark);
+    background-color: var(--second-bg);
     
     padding-bottom: 5rem;
   

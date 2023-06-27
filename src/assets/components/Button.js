@@ -7,12 +7,17 @@ const ButtonStyles = styled.div`
     
     .button {
         font-size: 2.2rem;
-        background-color: ${(props) => props.btnBorder ? 'transperant' : 'var(--gray-1)'};
+        background-color: ${(props) => props.btnBorder ? 'transperant' : 'var(--text)'};
         padding: 0.7em 2em;
-        border: 2px solid var(--gray-1);
+        border: 2px solid var(--text);
         border-radius: 8px;
         display: inline-block;
-        color: ${(props) => (props.btnBorder ? 'var(--gary-1)' : 'black')};
+        color: ${(props) => (props.btnBorder ? 'var(--text)' : 'var(--first-bg)')}; 
+        &:hover{
+          background-color: ${(props) => props.btnBorder ? 'transperant' : 'var(--blue)'};
+          color: ${(props) => (props.btnBorder ? 'var(--blue)' : 'var(--second-bg)')};
+          border: 2px solid var(--blue);
+      }
     }
     @media only screen and (max-width: 1000px) {
         .button {

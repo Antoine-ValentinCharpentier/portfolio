@@ -3,6 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { BsMoon, BsSun } from 'react-icons/bs';
 
 const NavBarStyles = styled.div`
     position: fixed;
@@ -11,7 +12,7 @@ const NavBarStyles = styled.div`
     left:0;
     width: 100%;
     padding 1rem 0;
-    background: var(--dark-bg);
+    background: var(--first-bg);
 
     .navItems{
         max-width : 1200px;
@@ -24,7 +25,7 @@ const NavBarStyles = styled.div`
             font-family:'RobotoMono Regular';
             padding: 1rem 2rem;
             font-size: 2rem;
-            color: var(--gray-1);
+            color: var(--text);
             outline: none;
 
             &.active{
@@ -39,11 +40,8 @@ const NavBarStyles = styled.div`
             transition: 0.4s ease background-color;
             &:hover{
                 background-color: var(--blue);
-                a{
-                    color: var(--gray-2);
-                }
                 a.active{
-                    color: var(--white);
+                    color: var(--first-bg);
                 }
             }
         }
@@ -52,10 +50,10 @@ const NavBarStyles = styled.div`
     .crossCloseNav{
         display:none;
     }
-    .burgerOpenNav{
+    .burgerOpenNav, .dark-mode-btn{
         position:absolute;
-        right: 3rem;
-        top: 3rem;
+        right: 2rem;
+        top: 2rem;
         width:3rem;
         cursor:pointer;
         display:none;
@@ -63,6 +61,11 @@ const NavBarStyles = styled.div`
         *{
             pointer-events:none;
         }
+    }
+    .dark-mode-btn {
+        left: 2rem;
+        display: block;
+        z-index: -1;
     }
     @media only screen and (max-width:1000px){
         padding:0; 
@@ -72,7 +75,7 @@ const NavBarStyles = styled.div`
         }
         .navItems{
             transition: 0.3s ease transform;
-            background-color: var(--deep-dark);
+            background-color: var(--second-bg);
             padding: 2rem;
             width: 100%;
             border-radius: 12px;
@@ -112,7 +115,7 @@ const BurgerOpenNavStyles = styled(GiHamburgerMenu)`
     color: var(--blue);
 `;
  
-export default function NavBar(){
+export default function NavBar({isDarkMode, switchDarkMode}){
     const [showNav, SetShowNav] = useState(false);
 
     const { pathname } = useLocation();
@@ -123,13 +126,19 @@ export default function NavBar(){
     return (
     <>
         <NavBarStyles>
-            <div className='burgerOpenNav' onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}><BurgerOpenNavStyles/></div>    
+            <div className='burgerOpenNav' onClick={()=>SetShowNav(!showNav)} role="button"><BurgerOpenNavStyles/></div>    
             <ul className={showNav ? 'navItems' : 'navItems close'}>
                 <div className='crossCloseNav' onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}><CloseCrossStyles/></div>
                 <li><NavLink to="/" end onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>Accueil</NavLink></li>
                 <li><NavLink to="/projects" onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>Mes projets</NavLink></li>
                 <li><NavLink to="/contact" onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>Me contacter</NavLink></li>
             </ul>
+            <div className='dark-mode-btn' onClick={switchDarkMode}>
+                { isDarkMode ?
+                (<BsMoon/>) : 
+                (<BsSun/>)
+                }
+            </div>   
         </NavBarStyles>
     </>
     )

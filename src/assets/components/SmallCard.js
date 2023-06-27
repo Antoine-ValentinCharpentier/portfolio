@@ -8,12 +8,12 @@ const ItemStyles = styled.span`
 
     margin-top:2rem;
     
-    background-color:var(--deep-dark);
+    background-color:var(--second-bg);
     border-radius: 0.5em;
 
     padding: 0.75em 1em;
     text-align:center;
-    border:3px solid var(--deep-dark);
+    border:3px solid var(--second-bg);
 
     img{
         max-height:1.5em;
@@ -22,7 +22,7 @@ const ItemStyles = styled.span`
     }
 
     &:hover{
-        background:var(--dark-bg);
+        background:var(--second-bg);
         border:3px solid var(--blue);
         transform:scale(1.1);
         transition:0.5s ease;

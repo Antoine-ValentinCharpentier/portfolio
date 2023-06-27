@@ -10,13 +10,13 @@ const SubtitleStyles = styled.div`
         font-size:2em;
         width: 100%; 
         text-align: center; 
-        border-bottom: 3px solid var(--white); 
+        border-bottom: 3px solid var(--details); 
         line-height: 0.1em;
-        color: var(--white);
+        color: var(--details);
 
         span { 
-            background-color: var(--dark-bg);
-             padding:2rem;
+            background-color: var(--first-bg);
+            padding:2rem;
          }
      } 
 

@@ -13,7 +13,7 @@ const TitleStyles = styled.div`
     padding-bottom:1rem;
     p{
         font-size:3em;
-        color: var(--gray-2);
+        color: var(--title);
     }
 
     @media only screen and (max-width: 1000px) {

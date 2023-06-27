@@ -29,7 +29,7 @@ const CardStyles = styled.div`
     }
 
     .body{
-        background: var(--deep-dark);
+        background: var(--second-bg);
         border-radius:1rem;
         padding:1rem;
         width:60%;
@@ -52,7 +52,7 @@ const CardStyles = styled.div`
         .desc, .techno{
             margin-top:1rem;
             p{
-                color:var(--gray-1);
+                color:var(--text);
                 font-size:1.5em;
                 display:inline-block;
             }
@@ -60,7 +60,7 @@ const CardStyles = styled.div`
 
         .techno:before{
             content:"Technologies : ";
-            color:var(--gray-1);
+            color:var(--text);
             font-size:1.5em;
         }
 
@@ -83,7 +83,7 @@ const CardStyles = styled.div`
         .body{
             .title{
                 h2{
-                    color:var(--white);
+                    color:var(--header-title);
                 }
             } 
             

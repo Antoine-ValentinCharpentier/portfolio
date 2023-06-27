@@ -7,17 +7,16 @@ const SmallButtonStyles = styled.div`
     
     .button {
         font-size: ${(props) => props.big ? '2rem' : '1.5rem'};
-        background-color: ${(props) => props.btnBorder ? 'transperant' : 'var(--gray-1)'};
+        background-color: ${(props) => props.btnBorder ? 'transperant' : 'var(--text)'};
         padding: 0.5em 1.5em;
-        border: 2px solid var(--gray-1);
+        border: 2px solid var(--text);
         border-radius: 8px;
         display: inline-block;
-        color: ${(props) => (props.btnBorder ? 'var(--gary-1)' : 'var(--deep-dark)')};
-        
+        color: ${(props) => (props.btnBorder ? 'var(--text)' : 'var(--first-bg)')};  
 
         &:hover{
             background-color: ${(props) => props.btnBorder ? 'transperant' : 'var(--blue)'};
-            color: ${(props) => (props.btnBorder ? 'var(--blue)' : 'var(--deep-dark)')};
+            color: ${(props) => (props.btnBorder ? 'var(--blue)' : 'var(--second-bg)')};
             border: 2px solid var(--blue);
         }
     }

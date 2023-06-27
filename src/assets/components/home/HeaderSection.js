@@ -6,6 +6,7 @@ import CV from '../../docs/cv.pdf'
 
 const HeaderStyles = styled.div`
     .header {
+        position: relative;
         min-height: 100vh;
         width: 90%;
         margin:0 auto;
@@ -17,7 +18,7 @@ const HeaderStyles = styled.div`
 
         .header_right {
             width: 50%;
-            border-left: 4px solid var(--white);
+            border-left: 4px solid var(--details);
 
             img{
                 border: 4px solid var(--blue);
@@ -39,7 +40,7 @@ const HeaderStyles = styled.div`
                     &.header_name {
                         font-family: 'Montserrat SemiBold';
                         font-size: 4rem;
-                        color: var(--white);
+                        color: var(--header-title);
                     }
                     &.header_name:before{
                         content: 'Antoine-Valentin ';
@@ -58,7 +59,7 @@ const HeaderStyles = styled.div`
                 p{
                     margin-top:3rem;
                     font-size:2rem;
-                    color:var(--white);
+                    color:var(--text);
                     white-space: pre-line;
                     text-align: justify;
                     line-height: 2;
@@ -116,8 +117,8 @@ const HeaderStyles = styled.div`
                 height:200px;
                 right:50px;
                 bottom:50px;
-                border-right: 1rem solid var(--gray-2);
-                border-bottom: 1rem solid var(--gray-2);
+                border-right: 1rem solid var(--details);
+                border-bottom: 1rem solid var(--details);
             }
             &::before{
                 position:absolute;
@@ -126,8 +127,8 @@ const HeaderStyles = styled.div`
                 height:200px;
                 left:50px;
                 top:50px;
-                border-top: 1rem solid var(--gray-2);
-                border-left: 1rem solid var(--gray-2);
+                border-top: 1rem solid var(--details);
+                border-left: 1rem solid var(--details);
             }
         }
     }

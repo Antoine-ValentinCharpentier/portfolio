@@ -16,8 +16,8 @@ const TimeLineStyles = styled.div`
             ul{
                 li {
                     padding: 20px;
-                    background-color: var(--deep-dark);
-                    color: var(--white);
+                    background-color: var(--second-bg);
+                    color: var(--text);
     
                     .timeline-content{
                         h1{
@@ -68,7 +68,7 @@ const TimeLineStyles = styled.div`
             transform: translateX(-50%);
             width: 2px;
             height: 100%;
-            background-color: var(--gray-1);
+            background-color: var(--details);
         }
 
         .timeline ul{
@@ -99,7 +99,7 @@ const TimeLineStyles = styled.div`
                 height: 20px;
                 width: 20px;
                 border-radius: 50%;
-                background-color: var(--white);
+                background-color: var(--details);
                 top: 0px;
             }
 

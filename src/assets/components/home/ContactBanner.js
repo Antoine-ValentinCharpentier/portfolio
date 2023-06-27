@@ -6,7 +6,7 @@ const ContactBannerStyles = styled.div`
     padding: 5rem 0;
 
     .contactBanner_wrapper {
-        background-color: var(--deep-dark);
+        background-color: var(--second-bg);
         border-radius: 12px;
         padding: 5rem 0rem;
         text-align: center;
@@ -48,7 +48,7 @@ export default function ContactBanner() {
             <div className='contactBanner_wrapper'>
                 <p>Vous avez une offre de stage à me proposer ?</p>
                 <h4 className='contactBanner_heading'>Contactez moi</h4>
-                <Button btnLabel="Contact" btnLink="/contact"></Button>
+                <Button btnLabel="Contact" btnLink="/contact" />
             </div>
         </div>
     </ContactBannerStyles>
