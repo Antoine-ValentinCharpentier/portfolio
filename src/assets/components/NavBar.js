@@ -126,7 +126,7 @@ export default function NavBar(){
             <div className='burgerOpenNav' onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}><BurgerOpenNavStyles/></div>    
             <ul className={showNav ? 'navItems' : 'navItems close'}>
                 <div className='crossCloseNav' onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}><CloseCrossStyles/></div>
-                <li><NavLink to="/" exact onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>Accueil</NavLink></li>
+                <li><NavLink to="/" end onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>Accueil</NavLink></li>
                 <li><NavLink to="/projects" onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>Mes projets</NavLink></li>
                 <li><NavLink to="/contact" onClick={()=>SetShowNav(!showNav)} role="button" onKeyDown={()=>SetShowNav(!showNav)}>Me contacter</NavLink></li>
             </ul>

@@ -24,7 +24,7 @@ export default function LanguagesSection() {
       <TitleSection title="Langues"/>
       <LanguagesSectionStyles>
         {LanguageData.map((language,index)=>{
-            return <ContactItem icon={<img src={language.img} alt=""/>} desc={
+            return <ContactItem key={`LanguagesSection-${index}`} icon={<img src={language.img} alt=""/>} desc={
                     <ul>
                         <li>{language.label}</li>
                         {language.test !== "" ? 

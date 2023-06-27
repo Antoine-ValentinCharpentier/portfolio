@@ -133,9 +133,9 @@ export default function TimeLine({datas, title}) {
             <div className='container'>
                 <div className='timeline'>
                     <ul>
-                    {datas.map((data) => {
+                    {datas.map((data, index) => {
                         return (
-                            <li>
+                            <li key={`Timeline-${index}`}>
                                 <div className="timeline-content">
                                     <h3 className="date">{data.date} | {data.city}</h3>
                                     <h1>{data.company}</h1>
