@@ -3,8 +3,22 @@ import styled from 'styled-components';
 import personalInfos from '../../data/PersonalInfoData';
 import SmallButton from '../SmallButton'
 import CV from '../../docs/cv.pdf'
+import { BsMouse } from 'react-icons/bs' 
+import { AiOutlineArrowDown } from 'react-icons/ai'
 
 const HeaderStyles = styled.div`
+    @keyframes blink {
+        0% {
+        opacity: 1;
+        }
+        50% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+
     .header {
         position: relative;
         min-height: 100vh;
@@ -77,7 +91,20 @@ const HeaderStyles = styled.div`
             }
         }
 
-    }
+        .header_bottom {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            p {
+                padding: 0 5px;
+            }
+            .blink-icon {
+                animation: blink 1.5s infinite ease-in-out;
+            }
+        }
+    }    
    
     @media only screen and (max-width: 1700px) {
         .header .header_right img{
@@ -181,6 +208,11 @@ export default function HeaderSection2() {
             </div>
             <div className='header_right'>
                 <img src={personalInfos.profilePicture} alt="de profil"/>
+            </div>
+            <div className='header_bottom'>
+                <BsMouse/>
+                <p>Défiler</p>
+                <AiOutlineArrowDown className='blink-icon'/>
             </div>
         </div>
 
