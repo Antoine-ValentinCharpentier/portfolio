@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import personalInfos from '../../data/PersonalInfoData';
 import SmallButton from '../SmallButton'
 import CV from '../../docs/cv.pdf'
-import { BsMouse } from 'react-icons/bs' 
-import { AiOutlineArrowDown } from 'react-icons/ai'
+import { BsMouse, BsGithub } from 'react-icons/bs' 
+import { AiOutlineArrowDown, AiOutlineLinkedin } from 'react-icons/ai'
 
 const HeaderStyles = styled.div`
     @keyframes blink {
@@ -22,8 +22,7 @@ const HeaderStyles = styled.div`
     .header {
         position: relative;
         min-height: 100vh;
-        width: 90%;
-        margin:0 auto;
+        padding:0 5%;
         text-align: center;
         display: flex;
         flex-direction:row;
@@ -102,6 +101,18 @@ const HeaderStyles = styled.div`
             }
             .blink-icon {
                 animation: blink 1.5s infinite ease-in-out;
+            }
+        }
+
+        .header_social_network {
+            position: absolute;
+            left: 20px;
+            font-size: 15px;
+            svg {
+                padding: 10px 0;
+            }
+            .social_hover:hover{
+                fill: var(--blue);
             }
         }
     }    
@@ -213,6 +224,14 @@ export default function HeaderSection2() {
                 <BsMouse/>
                 <p>Défiler</p>
                 <AiOutlineArrowDown className='blink-icon'/>
+            </div>
+            <div className='header_social_network'>
+                <a href="https://github.com/Antoine-ValentinCharpentier" target="_blank" rel="noopener noreferrer">
+                    <BsGithub className='social_hover'/>
+                </a>
+                <a href="https://www.linkedin.com/in/antoine-valentin-charpentier/" target="_blank" rel="noopener noreferrer">
+                    <AiOutlineLinkedin className='social_hover'/>
+                </a>
             </div>
         </div>
 
