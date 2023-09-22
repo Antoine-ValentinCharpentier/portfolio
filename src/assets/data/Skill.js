@@ -12,20 +12,63 @@ import Python from '../images/skills/python.png';
 import ReactLogo from '../images/skills/react-logo.png';
 import SQL from '../images/skills/sql-server.png';
 import UML from '../images/skills/uml.webp';
-import Bash from '../images/skills/bash.png';
-import VBA from '../images/skills/vba.webp';
 import C from '../images/skills/C.png';
+import R from '../images/skills/R.png';
+import Selenium from '../images/skills/selenium.png';
+import Soup from '../images/skills/soup.png';
+import MongoDB from '../images/skills/mongodb.png';
+import NodeJS from '../images/skills/nodejs.png';
+import ExpressJS from '../images/skills/expressjs.png';
+import NestJS from '../images/skills/nestjs.png';
+import RabbitMQ from '../images/skills/rabbitmq.png';
+import Socketio from '../images/skills/socketio.png';
+import Scrum from '../images/skills/scrum.png';
 
 const skills = [
     {
         id: uuidv4(),
+        icon: Python,
+        name:"Python",
+    },
+    {
+        id: uuidv4(),
+        icon: R,
+        name:"R",
+    },
+    {
+        id: uuidv4(),
+        icon: Selenium,
+        name:"Selenium",
+    },
+    {
+        id: uuidv4(),
+        icon: Soup,
+        name:"Beautiful Soup",
+    },
+    {
+        id: uuidv4(),
+        icon: SQL,
+        name:"SQL",
+    },
+    {
+        id: uuidv4(),
+        icon: MongoDB,
+        name:"MongoDB",
+    },
+    {
+        id: uuidv4(),
+        icon: Java,
+        name:"Java",
+    },
+    {
+        id: uuidv4(),
         icon: HTML,
-        name:"HTML5",
+        name:"HTML",
     },
     {
         id: uuidv4(),
         icon: CSS,
-        name:"CSS3",
+        name:"CSS",
     },
     {
         id: uuidv4(),
@@ -45,22 +88,32 @@ const skills = [
     {
         id: uuidv4(),
         icon: ReactLogo,
-        name:"Notions de React",
+        name:"React",
     },
     {
         id: uuidv4(),
-        icon: SQL,
-        name:"SQL",
+        icon: NodeJS,
+        name:"NodeJS",
     },
     {
         id: uuidv4(),
-        icon: Java,
-        name:"Java",
+        icon: ExpressJS,
+        name:"ExpressJS",
     },
     {
         id: uuidv4(),
-        icon: Python,
-        name:"Python",
+        icon: NestJS,
+        name:"NestJS",
+    },
+    {
+        id: uuidv4(),
+        icon: RabbitMQ,
+        name:"RabbitMQ",
+    },
+    {
+        id: uuidv4(),
+        icon: Socketio,
+        name:"Websocket",
     },
     {
         id: uuidv4(),
@@ -71,16 +124,6 @@ const skills = [
         id: uuidv4(),
         icon: Arduino,
         name:"Arduino",
-    },
-    {
-        id: uuidv4(),
-        icon: Bash,
-        name:"BASH",
-    },
-    {
-        id: uuidv4(),
-        icon: VBA,
-        name:"VBA",
     },
     {
         id: uuidv4(),
@@ -96,6 +139,11 @@ const skills = [
         id: uuidv4(),
         icon: GIT,
         name:"GIT",
+    },
+    {
+        id: uuidv4(),
+        icon: Scrum,
+        name:"PSPO1",
     },
 
     

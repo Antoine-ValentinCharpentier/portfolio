@@ -10,6 +10,13 @@ const educations = [
     },
     {
         id: uuidv4(),
+        company: "University of Skövde",
+        city: "Skövde - Suède",
+        desc: "Semestre d'échange à l'étranger",
+        date: "08/2023-01/2024",
+    },
+    {
+        id: uuidv4(),
         company: "Université de Technologie de Troyes",
         city: "Troyes",
         desc: "Classe préparatoire intégrée",
