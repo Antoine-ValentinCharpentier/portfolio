@@ -1,11 +1,18 @@
 import { v4 as uuidv4 } from 'uuid';
 
+import TwitterImg from '../images/projects/twitter.jpeg';
+import F1Img from '../images/projects/f1.jpg';
+import BankImg from '../images/projects/bank.png';
+import SudokuImg from '../images/projects/sudoku.png';
+import PenduImg from '../images/projects/pendu.jpg';
+import PokeClashImg from '../images/projects/pokeclash.jpg';
+import MobMinecraftImg from '../images/projects/mobminecraft.jpeg';
+
 import PortfolioImg from '../images/projects/portfolio.png';
 import CoursesImg from '../images/projects/courses.png';
 import VaccinsImg from '../images/projects/vaccins.png';
 import HypixelImg from '../images/projects/hypixel.png';
 import TintinImg from '../images/projects/tintin.png';
-import DashboardImg from '../images/projects/dashboard.png';
 
 import WHImg from '../images/projects/WitchHunt.png';
 import PokemonImg from '../images/projects/pokemon.png';
@@ -21,14 +28,119 @@ import EchecImg from '../images/projects/echec.png';
 const projectsData = [
     {
         id: uuidv4(),
+        category: "Data",
+        listProjects : [
+            {
+                id: uuidv4(),
+                title: "Tweets Analysis",
+                desc: "Implémentation de deux algorithmes de Machines Learning (un non-supervisé Kmeans et un autre supervisé le SVM) pour la détection de profils « atypique » de Twitter. Une analyse effectuée à l'aide d'un dataset de Tweets lors de la coupe du monde de football. Une comparaison des résultats a été effectuée.",
+                techno: [
+                    "Python", "Mongodb", "scikit learn", "Matplotlib"
+                ],
+                image: TwitterImg,
+                git:"https://github.com/Antoine-ValentinCharpentier/Tweet-Analysis",
+                youtube:"",
+            }, 
+            {
+                id: uuidv4(),
+                title: "F1 Analysis",
+                desc: "Analyse exploratoire d'un dataset portant sur la F1 pour répondre à certaines questions que l'on se posait à propos du jeu de donnée, puis création d'un dashboard. Le dataset que nous avons choisi provient d'Ergast Developer API.",
+                techno: [
+                    "R", "Ggplot", "Shiny", "Shiny Dashboard", "R Markdown"
+                ],
+                image: F1Img,
+                git:"https://github.com/IF36-visualisation/projet-if36-p23-007",
+                youtube:"",
+            }, 
+            {
+                id: uuidv4(),
+                title: "SearchVinted",
+                desc: "SearchVinted est un outil innovant conçu pour les passionnés de shopping sur Vinted, la plateforme de vente en ligne de vêtements et d'articles de mode d'occasion. Ce projet vise à améliorer l'expérience de recherche d'articles en permettant aux utilisateurs de filtrer et de trouver les objets en fonction d'une localisation. Par ailleurs, ce programme permet de récupérer des statistiques basées sur la localisation comme le nombre d'articles en vente par pays.",
+                techno: [
+                    "Python", "Selenium", "Beautiful Soup",
+                ],
+                image: ScrapingImg,
+                git:"https://github.com/Antoine-ValentinCharpentier/SearchVinted",
+                youtube:"",
+            },
+            {
+                id: uuidv4(),
+                title: "Customer Churn Predict",
+                desc: "Développer un modèle prédictif basé sur l'utilisation de l'Intelligence Artificielle, plus précisément des Réseaux Neuronaux Artificiels (ANN), afin de prédire avec précision si un client quittera la banque (churn) ou choisira de rester. De plus, il est demandé de classer tous les clients de la banque en fonction de leur probabilité de départ. Le modèle utilisé doit prendre en compte les informations géodémographiques et transactionnelles pour obtenir des résultats fiables.",
+                techno: [
+                    "Python", "Tensorflow", "scikit learn",
+                ],
+                image: BankImg,
+                git:"https://github.com/Antoine-ValentinCharpentier/Predict-Customer-Churn",
+                youtube:"",
+            },
+            {
+                id: uuidv4(),
+                title: "GeneticSudoku",
+                desc: "Ce projet propose d'implémenter un générateur de grilles de sudoku en utilisant un algorithme génétique. L'algorithme génétique permettra de créer des grilles initiales équilibrées, puis l'utilisateur pourra remplir les cases selon les règles du sudoku, offrant ainsi une expérience ludique et stimulante.",
+                techno: [
+                    "Python", 
+                ],
+                image: SudokuImg,
+                git:"https://github.com/Antoine-ValentinCharpentier/GeneticSudoku",
+                youtube:"",
+            },
+            {
+                id: uuidv4(),
+                title: "Minecraft Mob detection",
+                desc: "Le projet vise à développer un modèle de classification utilisant TensorFlow et Convolutional Neural Networks (CNN) pour distinguer les créatures hostiles et passives dans le jeu Minecraft.",
+                techno: [
+                    "Python", "Tensorflow", "CNN"
+                ],
+                image: MobMinecraftImg,
+                git:"",
+                youtube:"",
+            }, 
+            {
+                id: uuidv4(),
+                title: "Web Scraping (Messenger)",
+                desc: "Récupération d'un ensemble de conversations Messenger à l'aide d'une technique d'extraction du contenu de sites Web à base de Selenium, de Beautiful Soup et de Python. Puis, exportation des données collectées dans une base de donnée MySQL.",
+                techno: [
+                    "Python", "Selenium", "Beautiful Soup", "MySQL"
+                ],
+                image: ScrapingImg,
+                git:"",
+                youtube:"",
+            },  
+        ]
+    },
+    {
+        id: uuidv4(),
         category: "Site internet",
         listProjects : [
             {
                 id: uuidv4(),
-                title: "Portfolio",
-                desc: "Réalisation d'un portfolio retraçant mon parcours académique, professionnel, les différents projets que j'ai réalisés (personnel et académique). Nous pouvons également y retrouver certaines de mes compétences et les langues que je parle. De plus, dans ce portfolio, nous pouvons y retrouver l'ensemble des informations afin de me contacter ainsi qu'un formulaire de contact qui m'envoie un e-mail grâce à EmailJS. Il s'agit d'un projet personnel.",
+                title: "PokeClash (en cours)",
+                desc: "PokeClash est un jeu de stratégie en ligne basé sur la populaire série de jeux vidéo Pokémon. Il s'agit d'une refonte de Pokémon Showdown, offrant une expérience de jeu améliorée pour les joueurs de tous niveaux, centrée sur la stratégie des combats Pokémon. Chaque joueur a la possibilité d'affronter un autre, où le vainqueur gagne des trophées et l'autre en perd. Le projet comportera plusieurs mini-jeux permettant aux joueurs de s'affronter. À l'heure actuelle, seule la fonctionnalité d'inscription/connexion est opérationnelle.                ",
                 techno: [
-                    "React", "CSS", "EmailJS", 
+                    "React", "NestJS", "MongoDB", "CSS", "JWT", "Refresh token"
+                ],
+                image: PokeClashImg,
+                git:"https://github.com/Antoine-ValentinCharpentier/PokeClash",
+                youtube:"",
+            },
+            {
+                id: uuidv4(),
+                title: "Jeu du pendu",
+                desc: "Remix du célèbre jeu du pendu : tous les joueurs jouent avec le même mot chaque jour, et chaque joueur est autorisé à jouer une seule fois par jour. Des statistiques sont fournies à l'utilisateur après qu'il a terminé ses tentatives ou trouvé le mot. Le mot est obtenu via un appel à une API.",
+                techno: [
+                    "React", "ExpressJS", "MongoDB", "CSS" 
+                ],
+                image: PenduImg,
+                git:"",
+                youtube:"",
+            },
+            {
+                id: uuidv4(),
+                title: "Portfolio",
+                desc: "Réalisation d'un portfolio retraçant mon parcours académique, professionnel, les différents projets que j'ai réalisés (personnel et académique). Nous pouvons également y retrouver certaines de mes compétences et les langues que je parle. De plus, dans ce portfolio, nous pouvons y retrouver l'ensemble des informations afin de me contacter ainsi qu'un formulaire de contact qui m'envoie un e-mail.",
+                techno: [
+                    "React", "CSS", 
                 ],
                 image: PortfolioImg,
                 git:"https://github.com/Antoine-ValentinCharpentier/portfolio",
@@ -47,7 +159,7 @@ const projectsData = [
             },
             {
                 id: uuidv4(),
-                title: "Gestion d’un centre de vaccination",
+                title: "Gestion d'un centre de vaccination",
                 desc: "Site web permettant de gérer un ensemble de centres de vaccination. Différentes fonctionnalités y sont présentes comme l'ajout d'un nouveau vaccin, centre, patient, réapprovisionnement de dose de vaccins aux centres, consultations du nombre d'injections administrées à un patient, récapitulatif des stocks de chaque centre, quelques statistiques, ... Il s'agit d'un projet académique.",
                 techno: [
                     "HTML", "CSS", "PHP","MySQL","Bootstrap","MVC"
@@ -77,17 +189,6 @@ const projectsData = [
                 image: TintinImg,
                 git:"https://github.com/Antoine-ValentinCharpentier/tintin",
                 youtube:"https://www.youtube.com/watch?v=up8kdRT7T2M&t=180s",
-            },
-            {
-                id: uuidv4(),
-                title: "Dashboard",
-                desc: "Site web ayant pour vocation de modifier un ensemble d'information (prix d'une boutique,...) d'un serveur de mini jeu Minecraft. De plus, sur ce site, nous pouvons y retrouver un ensemble d'informations portant sur le serveur. Il s'agit d'un projet personnel réalisé en binôme.",
-                techno: [
-                    "HTML", "CSS", "PHP","MySQL",
-                ],
-                image: DashboardImg,
-                git:"",
-                youtube:"",
             },
         ]
     },
@@ -204,17 +305,6 @@ const projectsData = [
         id: uuidv4(),
         category: "Autres",
         listProjects : [
-            {
-                id: uuidv4(),
-                title: "Web Scraping",
-                desc: "Récupération d'un ensemble de conversations Messenger à l'aide d'une technique d'extraction du contenu de sites Web à base de Selenium et de Python. Puis, exportation des données collectées au format JSON.  Il s'agit d'un projet personnel.",
-                techno: [
-                    "Python", "Selenium","JSON"
-                ],
-                image: ScrapingImg,
-                git:"",
-                youtube:"",
-            },  
             {
                 id: uuidv4(),
                 title: "Administration d'un serveur de mini-jeux",
