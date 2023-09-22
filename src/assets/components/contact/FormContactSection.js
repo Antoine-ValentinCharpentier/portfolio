@@ -1,6 +1,5 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import TitleSection from '../TitleSection'
-import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import personalInfos from '../../data/PersonalInfoData';
 import SubtitleSection from '../SubtitleSection';
@@ -86,31 +85,18 @@ const FormStyles = styled.div`
 
 export default function FormContactSection() {
 
-    const {register, handleSubmit, reset, formState:{isSubmitSuccessful}} = useForm();
-
-    const form = useRef();
-    const sendEmail = (e) => {
-
-        emailjs.sendForm(personalInfos.emailjs.emailServiceID, personalInfos.emailjs.emailTemplateID, form.current, personalInfos.emailjs.publicKey)
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-        
-          reset();
-      };
-    
+    const {register, reset, formState:{isSubmitSuccessful}} = useForm();    
 
     return (
         <>
         <TitleSection title="Envie de me contacter ?"/>
         <SubtitleSection subtitle="Formulaire de contact"/>
         <FormStyles>
-            <form ref={form} onSubmit={handleSubmit(sendEmail)}>
+            <form handleSubmit={() => reset()} action={`https://formsubmit.co/${personalInfos.email}`} autoComplete="off" method="POST">
                 <div className='form_row'>
-                    <label htmlFor="last-name">Nom
-                        <input type="text" id="last-name" placeholder='Votre nom' {...register("lastName", { 
+                    <label htmlFor="last-name">
+                        Nom
+                        <input name="surname" type="text" id="last-name" placeholder='Votre nom' {...register("lastName", { 
                             required: {
                                 value: true,
                                 message: "Ce champ est requis"
@@ -123,14 +109,26 @@ export default function FormContactSection() {
                             }
                         })}/>
                     </label>
-                    <label htmlFor="first-name">Prénom<input type="text" id="first-name" placeholder='Votre Prénom' {...register("firstName", { maxLength: 26})}/></label>
+                    <label htmlFor="first-name">
+                        Prénom
+                        <input name="firstname" type="text" id="first-name" placeholder='Votre Prénom' {...register("firstName", { maxLength: 26})}/>
+                    </label>
                 </div>
                 <div className='form_row'>
-                    <label htmlFor="email">Email<input type="email" id="email" placeholder='Votre email' {...register("email", { required: true })}/></label>
-                    <label htmlFor="tel">Numéro de téléphone<input type="tel" id="tel" placeholder='Votre numéro de téléphone' {...register("tel", { required: true, maxLength: 10,minLength:10})}/></label>
+                    <label htmlFor="email">
+                        Email
+                        <input name="email" type="email" id="email" placeholder='Votre email' {...register("email", { required: true })}/>
+                    </label>
+                    <label htmlFor="tel">
+                        Numéro de téléphone
+                        <input name="tel" type="tel" id="tel" placeholder='Votre numéro de téléphone' {...register("tel", { required: false, maxLength: 10,minLength:10})}/>
+                    </label>
                 </div> 
                 <div className='form_row'>
-                    <label htmlFor='msg'>Message<textarea id='msg' placeholder='Votre message' rows='4' {...register("msg", { required: true })}/></label>
+                    <label htmlFor='msg'>
+                        Message
+                        <textarea name="msg" id='msg' placeholder='Votre message' rows='4' {...register("msg", { required: true })}/>
+                    </label>
                 </div>   
                 <div className='form_row'>
                     <SmallButton btnLabel="Envoyer" outside={false} form={true}/>
