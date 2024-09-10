@@ -1,7 +1,7 @@
 import React from 'react'
 import TitleSection from '../TitleSection'
 import styled from 'styled-components';
-import personalInfos from '../../data/PersonalInfoData';
+import personalInfos from '../../assets/data/PersonalInfoData';
 import SubtitleSection from '../SubtitleSection';
 import SmallButton from '../SmallButton';
 import { useForm } from 'react-hook-form';

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
-import personalInfos from '../../data/PersonalInfoData';
+import personalInfos from '../../assets/data/PersonalInfoData';
 import SmallButton from '../SmallButton'
-import CV from '../../docs/cv.pdf'
+import CV from '../../assets/docs/cv.pdf'
 import { BsMouse, BsGithub } from 'react-icons/bs' 
 import { AiOutlineArrowDown, AiOutlineLinkedin } from 'react-icons/ai'
 

@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import NavBar from './assets/components/NavBar';
-import Home from './assets/pages/Home';
-import Projects from './assets/pages/Projects';
-import Contact from './assets/pages/Contact';
+import NavBar from './components/NavBar';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 import useDarkMode from './hooks/useDarkMode';
 
 export default function App() {

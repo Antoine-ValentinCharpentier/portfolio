@@ -3,7 +3,7 @@ import SubtitleSection from '../SubtitleSection'
 import ContactItem from '../Card'
 import { AiTwotonePhone, AiOutlineMail } from 'react-icons/ai';
 import { MdOutlinePlace } from 'react-icons/md';
-import personalInfos from '../../data/PersonalInfoData'
+import personalInfos from '../../assets/data/PersonalInfoData'
 import styled from 'styled-components';
 
 const ContactInfosSectionStyles = styled.div`

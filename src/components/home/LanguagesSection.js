@@ -1,7 +1,7 @@
 import React from 'react'
 import TitleSection from '../TitleSection'
 import ContactItem from '../Card'
-import LanguageData from '../../data/LanguageData'
+import LanguageData from '../../assets/data/LanguageData'
 import styled from 'styled-components';
 
 const LanguagesSectionStyles = styled.div`

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import personalInfos from '../data/PersonalInfoData';
+import personalInfos from '../assets/data/PersonalInfoData';
 import { AiTwotonePhone, AiOutlineMail } from 'react-icons/ai';
 import { MdOutlinePlace } from 'react-icons/md';
 

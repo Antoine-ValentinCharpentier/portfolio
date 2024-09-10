@@ -5,8 +5,8 @@ import HeaderSection from '../components/home/HeaderSection'
 import TimeLine from '../components/home/Timeline'
 import LanguagesSection from '../components/home/LanguagesSection'
 import SkillsSection from '../components/home/SkillsSection'
-import educations from '../data/EducationData'
-import works from '../data/WorkData'
+import educations from '../assets/data/EducationData'
+import works from '../assets/data/WorkData'
 
 export default function Home() {
   return (

@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer'
 import ProjectsSection from '../components/project/ProjectsSection'
 import TitleSection from '../components/TitleSection'
-import projectData from '../data/ProjectsData'
+import projectData from '../assets/data/ProjectsData'
 
 export default function Projects() {
   return (

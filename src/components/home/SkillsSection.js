@@ -1,5 +1,5 @@
 import React from 'react'
-import skills from '../../data/Skill'
+import skills from '../../assets/data/Skill'
 import SmallCard from '../SmallCard'
 import TitleSection from '../TitleSection'
 import styled from 'styled-components';
