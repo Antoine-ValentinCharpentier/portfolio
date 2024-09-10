@@ -43,4 +43,18 @@ Ce portfolio a été développé avec les technologies suivantes :
 - ``Node.js`` : Environnement d'exécution JavaScript côté serveur.
 - ``CSS`` et ``react-styled-components`` : Pour le stylisme et la mise en page du site.
 - ``GitHub Pages`` : Déploiement et hébergement du site web.
+
+## Deploiement
+1. Assurez-vous d'être sur la branche principale (main). Si ce n'est pas le cas, exécutez la commande suivante pour y basculer 
+   ```bash
+   git checkout main
+   ```
+2. Lancez la commande de déploiement :
+   ```bash
+   npm run deploy
+   ```
+
+Cette commande va :
+- Build le projet
+- Puis pousser automatiquement le répertoire de build vers la branche ``gh-pages``, afin de rendre le portfolio accessible en ligne.
    
