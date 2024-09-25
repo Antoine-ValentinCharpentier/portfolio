@@ -104,7 +104,7 @@ export default function Footer() {
         <div className="footer_left_column">
           <h2 className="footer_left_column_title">Antoine-Valentin</h2>
           <ContentStyles>
-              <p>Bientôt diplômé en ingénierie Informatique et Systèmes d'Information, spécialisé en Valorisation des données et des connaissances à l'Université de Technologie de Troyes.</p>
+              <p>Jeune diplômé en ingénierie Informatique et Systèmes d'Information, à l'Université de Technologie de Troyes (UTT).</p>
           </ContentStyles>
         </div>
         <div className="footer_right_column">

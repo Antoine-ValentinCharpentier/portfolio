@@ -210,7 +210,7 @@ export default function HeaderSection2() {
                     <span className='header_name'></span>
                 </h1>
                 <div className='header_desc'>
-                    <p>Bientôt diplômé en ingénierie <span className='blue'>Informatique et Systèmes d'Information</span> et spécialisé en Valorisation des données et des connaissances à <span className='blue'>l'Université de Technologie de Troyes</span>.</p>
+                    <p>Jeune diplômé en ingénierie <span className='blue'>Informatique et Systèmes d'Information</span> de l'Université de Technologie de Troyes <span className='blue'>(UTT)</span>.</p>
                 </div>
                 <div className='header_buttons'>
                     <SmallButton big={true} btnLink={CV} btnLabel="Mon CV" outside={true}/>

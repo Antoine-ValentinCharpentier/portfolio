@@ -46,7 +46,7 @@ export default function ContactBanner() {
     <ContactBannerStyles>
         <div className='container'>
             <div className='contactBanner_wrapper'>
-                <p>Vous avez une offre de stage à me proposer ?</p>
+                <p>Vous avez une offre à me proposer ?</p>
                 <h4 className='contactBanner_heading'>Contactez moi</h4>
                 <Button btnLabel="Contact" btnLink="/contact" />
             </div>
