@@ -3,6 +3,13 @@ import { v4 as uuidv4 } from 'uuid';
 const works = [
     {
         id: uuidv4(),
+        company: "Sopra Steria - Ingénieur d'étude et développement",
+        city: "Orléans",
+        desc: "Je conçois des solutions d’automatisation de processus métier avec Camunda, en modélisant des workflows en BPMN et en développant les unités de traitement en Spring, cela appliqué au domaine des réseaux et télécommunications. Environnement : Camunda, Spring, Spring Boot, Java, React, PostgreSQL, Kubernetes, Docker.",
+        date: "06 janv. 2025 - ajd",
+    },
+    {
+        id: uuidv4(),
         company: "Aubay - Ingénieur Logiciel/IA (Stage)",
         city: "Boulogne-Billancourt",
         desc: "Développement d'une application web pour la génération automatique d'états de l'art basée sur des techniques avancées de traitement du langage naturel (NLP). L'application commence par collecter un ensemble d'articles scientifiques pertinents en lien avec le sujet de l'état de l'art. Ensuite, elle filtre et sélectionne uniquement des articles de qualité, puis les regroupe par sous-thèmes à l'aide du topic modeling. Chaque article est ensuite résumé de manière automatique. Une fois l'état de l'art généré, l'application permet à l'utilisateur de poser des questions, tant sur un article spécifique que sur l'ensemble des articles traités. Ce projet a été développé avec les technologies suivantes : PyTorch, Hugging Face, LangChain, Docker, React, FastAPI et PostgreSQL.",

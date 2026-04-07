@@ -31,6 +31,11 @@ import Langchain from '../images/skills/langchain.png';
 const skills = [
     {
         id: uuidv4(),
+        icon: Java,
+        name:"Java",
+    },
+    {
+        id: uuidv4(),
         icon: HTML,
         name:"HTML",
     },
@@ -133,11 +138,6 @@ const skills = [
         id: uuidv4(),
         icon: MongoDB,
         name:"MongoDB",
-    },
-    {
-        id: uuidv4(),
-        icon: Java,
-        name:"Java",
     },
     {
         id: uuidv4(),
