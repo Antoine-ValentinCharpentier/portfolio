@@ -13,7 +13,7 @@ export default function App() {
   
   return (
     <div className={darkMode ? 'dark-mode': 'light-mode'}>
-        <Router>
+        <Router basename="/portfolio">
             <NavBar isDarkMode={darkMode} switchDarkMode={switchDarkMode} />
             <Routes>
                 <Route path="/projects" element={<Projects/>} />
