@@ -1,7 +1,7 @@
 # Portfolio - Antoine Valentin Charpentier
 Ce projet est un site web personnel qui présente mon parcours académique et professionnel, ainsi que les différents projets sur lesquels j'ai travaillé. Ce portfolio est destiné à partager mon expérience et mes compétences avec d'éventuels recruteurs, collaborateurs ou toute autre personne intéressée par mon parcours.
 
-Si vous souhaitez consulter mon portfolio en ligne, il est accessible à l'adresse suivante : [antoinevalentin-charpentier.fr](https://antoinevalentin-charpentier.fr/)
+Si vous souhaitez consulter mon portfolio en ligne, il est accessible à l'adresse suivante : [antoine-valentincharpentier.github.io/portfolio](https://antoine-valentincharpentier.github.io/portfolio/)
 
 ## Fonctionnalités
 - **Présentation personnelle** : Une section dédiée à mon parcours académique, mes expériences professionnelles, et mes compétences clés.
